@@ -20,21 +20,21 @@ describe('Nav component', () => {
     });
 })
 
-// describe('emoji is visible', () => {
-//     it('inserts emoji into the h2', () => {
-//         // ARRANGE
-//         const { getByLabelText } = render(<Nav />);
-//         // ASSERT
-//         expect(getByLabelText('camera')).toHaveTextContent('📸');
-//     })
-// })
+describe('emoji is visible', () => {
+    it('inserts emoji into the h2', () => {
+        // ARRANGE
+        const { getByLabelText } = render(<Nav />);
+        // ASSERT
+        expect(getByLabelText('camera')).toHaveTextContent('📸');
+    })
+})
 
-// describe('links are visible', () => {
-//     it('inserts text into the links', () => {
-//         // ARRANGE
-//         const { getByTestId } = render(<Nav />);
-//         // ASSERT
-//         expect(getByTestId('link')).toHaveTextContent('Oh Snap!');
-//         expect(getByTestId('about')).toHaveTextContent('About me');
-//     });
-// })
+describe('links are visible', () => {
+    it('inserts text into the links', () => {
+        // ARRANGE
+        const { getByTestId } = render(<Nav />);
+        // ASSERT
+        expect(getByTestId('link')).toHaveTextContent('Oh Snap!');
+        expect(getByTestId('about')).toHaveTextContent('About me');
+    });
+})
